@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Phones - Servicios</title>
+  <meta name="description" content="Explora los servicios de King Phones. Ofrecemos reparación, mantenimiento y asesoramiento experto para tus dispositivos móviles.">
+  <meta name="keywords" content="King Phones, servicios, reparación, mantenimiento, asesoramiento">
+  <meta name="author" content="Thiago Argel">
+  <!-- Enlaces a Bootstrap u otros estilos que puedas necesitar -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <nav class="nav1">
+    <ul class="sidebar">
+     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+     <li><a href="/HTML/nosotros.html">Nosotros</a></li>
+     <li><a href="/HTML/tienda.html">Tienda</a></li>
+     <li><a href="/HTML/servicios.html">Servicios</a></li>
+     <li><a href="/HTML/soporte.html">Soporte</a></li>
+    </ul>
+    <ul class="ul1">
+     <li class="Titulo"><a href="/index.html">King Phones</a></li>
+     <img src="/Assets/Queen-Crown-PNG-Picture (1).png" alt="logo" class="logo">
+     <li class="hideOnMobile"><a href="/HTML/nosotros.html">Nosotros</a></li>
+     <li class="hideOnMobile"><a href="/HTML/tienda.html">Tienda</a></li>
+     <li class="hideOnMobile"><a href="/HTML/servicios.html">Servicios</a></li>
+     <li class="hideOnMobile"><a href="/HTML/soporte.html">Soporte</a></li>
+     <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+ </nav>
+
+  <!-- Sección de Servicios -->
+  <section class="section-services">
+    <div class="container">
+      <!-- Introducción -->
+      <div class="intro-section">
+        <h1>Nuestros Servicios</h1>
+        <img src="/Assets/servicios.jpeg" alt="Imagen de introducción">
+      </div>
+
+      <!-- Servicio de Mantenimiento y Garantía -->
+      <div class="row service-box">
+        <div class="col-md-6">
+          <img src="/Assets/mantenimiento.jpeg" alt="Imagen de Mantenimiento">
+        </div>
+        <div class="col-md-6">
+          <div class="service-info">
+            <h2>Mantenimiento y Garantía</h2>
+            <p>
+              Ofrecemos servicios de mantenimiento preventivo para garantizar el rendimiento óptimo de tus dispositivos.
+              Además, proporcionamos garantías flexibles para tu tranquilidad.
+            </p>
+            <a href="/HTML/soporte.html" class="btn btn-primary">Soporte</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio de Reparación Oficial -->
+      <div class="row service-box">
+        <div class="col-md-6">
+          <img src="/Assets/reparacion.jpeg" alt="Imagen de Reparación">
+        </div>
+        <div class="col-md-6">
+          <div class="service-info">
+            <h2>Reparación Oficial</h2>
+            <p>
+              Somos un centro de reparación oficial, con técnicos especializados que utilizan piezas genuinas.
+              Garantizamos reparaciones rápidas y eficientes para devolver tus dispositivos a su pleno funcionamiento.
+            </p>
+            <a href="/HTML/soporte.html" class="btn btn-primary">Soporte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 King Phones. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts de Bootstrap y JS personalizado -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

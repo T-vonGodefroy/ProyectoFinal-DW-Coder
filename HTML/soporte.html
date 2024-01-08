@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Phones - Soporte Técnico</title>
+  <meta name="description" content="Obtén soporte técnico de alta calidad en King Phones. Resolvemos consultas, ofrecemos mantenimiento, garantía y servicios de reparación para tus dispositivos.">
+  <meta name="keywords" content="King Phones, soporte técnico, consultas, mantenimiento, garantía, reparación">
+  <meta name="author" content="Thiago Argel">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <nav class="nav1">
+    <ul class="sidebar">
+     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+     <li><a href="/HTML/nosotros.html">Nosotros</a></li>
+     <li><a href="/HTML/tienda.html">Tienda</a></li>
+     <li><a href="/HTML/servicios.html">Servicios</a></li>
+     <li><a href="/HTML/soporte.html">Soporte</a></li>
+    </ul>
+    <ul class="ul1">
+     <li class="Titulo"><a href="/index.html">King Phones</a></li>
+     <img src="/Assets/Queen-Crown-PNG-Picture (1).png" alt="logo" class="logo">
+     <li class="hideOnMobile"><a href="/HTML/nosotros.html">Nosotros</a></li>
+     <li class="hideOnMobile"><a href="/HTML/tienda.html">Tienda</a></li>
+     <li class="hideOnMobile"><a href="/HTML/servicios.html">Servicios</a></li>
+     <li class="hideOnMobile"><a href="/HTML/soporte.html">Soporte</a></li>
+     <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+ </nav>
+
+  <!-- Sección de Soporte Técnico -->
+  <section class="section-soporte">
+    <div class="container">
+      <!-- Introducción -->
+      <div class="intro-soporte">
+        <h1 class="titulo-soporte">Servicio de Soporte Técnico</h1>
+        <p class="descripcion-soporte">Experimenta la excelencia en nuestro servicio de soporte técnico, diseñado para satisfacer todas tus necesidades.</p>
+      </div>
+
+      <!-- Consultas -->
+      <div class="soporte-seccion">
+        <img class="imagen-soporte" src="/Assets/tech.jpeg" alt="Imagen de Consultas">
+        <div class="info-soporte">
+          <h2 class="titulo-info">Consultas</h2>
+          <p class="descripcion-info">Resuelve tus dudas y obtén asesoramiento experto de nuestro equipo de soporte.</p>
+          <p class="descripcion-info">Contacto: <a href="mailto:consultas@kingphones.com">consultas@kingphones.com</a></p>
+          <p class="descripcion-info">Teléfono: +123 456 789</p>
+        </div>
+      </div>
+
+      <!-- Mantenimiento y Garantía -->
+      <div class="soporte-seccion">
+        <img class="imagen-soporte" src="/Assets/mantenimiento.jpeg" alt="Imagen de Mantenimiento y Garantía">
+        <div class="info-soporte">
+          <h2 class="titulo-info">Mantenimiento y Garantía</h2>
+          <p class="descripcion-info">Garantizamos el rendimiento óptimo de tus dispositivos con nuestros servicios de mantenimiento y garantía.</p>
+          <p class="descripcion-info">Contacto: <a href="mailto:mantenimiento@kingphones.com">mantenimiento@kingphones.com</a></p>
+          <p class="descripcion-info">Teléfono: +123 456 789</p>
+        </div>
+      </div>
+
+      <!-- Servicio de Reparación -->
+      <div class="soporte-seccion">
+        <img class="imagen-soporte" src="/Assets/reparacion.jpeg" alt="Imagen de Servicio de Reparación">
+        <div class="info-soporte">
+          <h2 class="titulo-info">Servicio de Reparación</h2>
+          <p class="descripcion-info">Confía en nuestro equipo de técnicos especializados para reparar y restaurar tus dispositivos.</p>
+          <p class="descripcion-info">Contacto: <a href="mailto:reparacion@kingphones.com">reparacion@kingphones.com</a></p>
+          <p class="descripcion-info">Teléfono: +123 456 789</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo de WhatsApp -->
+    <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp-logo">
+      <img src="/Assets/icons8-whatsapp-128.png" alt="Logo de WhatsApp">
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 King Phones. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
